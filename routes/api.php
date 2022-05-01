@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('getquestions',[\App\Http\Controllers\QuizController::class,'getQuestions']);
-Route::post('registercusomer', [\App\Http\Controllers\CustomerController::class,'createUser']);
-Route::post('submitquiz',[\App\Http\Controllers\QuizController::class,'submitQuiz']);
+Route::get('getquestions', [\App\Http\Controllers\QuizController::class, 'getQuestions']);
+Route::post('registercusomer', [\App\Http\Controllers\CustomerController::class, 'createUser']);
+Route::post('submitquiz', [\App\Http\Controllers\QuizController::class, 'submitQuiz']);
